@@ -1,0 +1,30 @@
+:root {
+    /* Spacing */
+    --sp-1: 4px;
+    --sp-2: 8px;
+    --sp-3: 12px;
+    --sp-4: 16px;
+    --sp-5: 20px;
+    --sp-6: 24px;
+    --sp-8: 32px;
+
+    /* Typography */
+    --text-xs: 11px;
+    --text-sm: 13px;
+    --text-md: 14px;
+    --text-lg: 16px;
+    --text-xl: 20px;
+
+    /* Radius */
+    --r-sm: 4px;
+    --r-md: 6px;
+    --r-lg: 10px;
+    --r-full: 9999px;
+
+    /* Layout */
+    --topbar-h: 48px;
+    --sidebar-w: 260px;
+
+    /* Motion */
+    --ease: 150ms ease;
+}

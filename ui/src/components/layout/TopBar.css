@@ -1,0 +1,214 @@
+.topbar {
+    height: var(--topbar-h);
+    background: var(--bg-surface);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    padding: 0 var(--sp-4);
+    gap: var(--sp-3);
+    flex-shrink: 0;
+    z-index: 10;
+    overflow: hidden;
+}
+
+/* Brand */
+.topbar-brand {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-2);
+    flex-shrink: 0;
+}
+
+.topbar-logo { font-size: 18px; }
+
+.topbar-name {
+    font-size: var(--text-md);
+    font-weight: 700;
+    color: var(--text-1);
+    letter-spacing: -0.01em;
+    white-space: nowrap;
+}
+
+/* Vertical divider */
+.topbar-divider {
+    width: 1px;
+    height: 20px;
+    background: var(--border);
+    flex-shrink: 0;
+}
+
+/* ── Instance switcher ───────────────────────────────── */
+.topbar-inst {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.inst-trigger {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-2);
+    padding: var(--sp-1) var(--sp-2);
+    border-radius: var(--r-md);
+    color: var(--text-1);
+    transition: background var(--ease);
+    height: 36px;
+}
+.inst-trigger:hover { background: var(--bg-elevated); }
+
+.inst-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: var(--r-full);
+    background: var(--green);
+    flex-shrink: 0;
+}
+
+/* Two-line label + value stack inside the trigger button */
+.ctx-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1px;
+}
+
+/* Shared label / value styles (used in topbar pills + ctx-stack) */
+.ctx-label {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--text-3);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 1;
+}
+
+.ctx-value {
+    font-size: var(--text-sm);
+    font-weight: 500;
+    color: var(--text-1);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 160px;
+    line-height: 1.2;
+}
+
+/* ── Context pills (Application / Update Set / User) ─── */
+.ctx-pill {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    padding: var(--sp-1) var(--sp-2);
+    flex-shrink: 0;
+}
+
+.ctx-pill--warn .ctx-value {
+    color: var(--warning, #d29922);
+}
+
+/* ── Dropdown ─────────────────────────────────────────── */
+.inst-dropdown {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    min-width: 290px;
+    background: var(--bg-overlay);
+    border: 1px solid var(--border);
+    border-radius: var(--r-lg);
+    padding: var(--sp-2);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+    z-index: 100;
+}
+
+.drop-section {
+    font-size: var(--text-xs);
+    font-weight: 600;
+    color: var(--text-3);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: var(--sp-2) var(--sp-3);
+}
+
+.drop-item {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-2);
+    padding: var(--sp-2) var(--sp-3);
+    border-radius: var(--r-md);
+    cursor: pointer;
+    transition: background var(--ease);
+}
+.drop-item:hover              { background: var(--bg-elevated); }
+.drop-item--active            { background: var(--accent-bg); }
+.drop-item--active .drop-dot  { background: var(--green); }
+
+.drop-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: var(--r-full);
+    background: var(--text-3);
+    flex-shrink: 0;
+}
+
+.drop-meta {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    overflow: hidden;
+}
+
+.drop-name {
+    font-size: var(--text-sm);
+    font-weight: 500;
+    color: var(--text-1);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.drop-url {
+    font-size: var(--text-xs);
+    color: var(--text-3);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.drop-del {
+    padding: var(--sp-1);
+    border-radius: var(--r-sm);
+    color: var(--text-3);
+    opacity: 0;
+    transition: opacity var(--ease), color var(--ease);
+    flex-shrink: 0;
+}
+.drop-item:hover .drop-del { opacity: 1; }
+.drop-del:hover             { color: var(--red); }
+
+.drop-divider {
+    height: 1px;
+    background: var(--border);
+    margin: var(--sp-2) 0;
+}
+
+.drop-add {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-2);
+    width: 100%;
+    padding: var(--sp-2) var(--sp-3);
+    border-radius: var(--r-md);
+    color: var(--accent);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    transition: background var(--ease);
+}
+.drop-add:hover { background: var(--accent-bg); }
+
+/* ── Actions (theme toggle) ───────────────────────────── */
+.topbar-actions {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}

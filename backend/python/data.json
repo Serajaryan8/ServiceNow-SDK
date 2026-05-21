@@ -1,0 +1,31 @@
+{
+  "knowledge_base": [
+    {"title": "Reset Password", "description": "To reset your password, click 'Forgot Password' on the ServiceNow login page. A reset link will be sent to your email."},
+    {"title": "VPN Access Issue", "description": "If your VPN fails, verify Cisco AnyConnect credentials and network connection. Contact IT if the issue persists."},
+    {"title": "Account Locked", "description": "Accounts lock after 5 failed logins. Wait 15 minutes or call Service Desk to unlock it manually."},
+    {"title": "New Laptop Request", "description": "Go to Service Catalog → Hardware → Laptop Request and submit your request."},
+    {"title": "Incident Creation", "description": "In Service Portal, click 'Report an Issue', fill in short description and details, then click 'Submit'."},
+    {"title": "Software Request", "description": "Visit Service Catalog → Software → Request Software. Choose the software and submit the form."},
+    {"title": "VPN Setup Guide", "description": "To set up VPN, install Cisco AnyConnect, enter VPN URL, and log in with your credentials."},
+    {"title": "Service Request Approval", "description": "Managers can approve or reject requests in 'My Approvals' within the ServiceNow portal."},
+    {"title": "Incident Status Check", "description": "Navigate to 'My Incidents' to view your open and closed incidents."},
+    {"title": "MFA Setup", "description": "Go to Preferences → Security → MFA and scan the QR code with the Authenticator app."}
+  ],
+  "incidents": [
+    {"number": "INC0010001", "short_description": "Email not syncing", "state": "New", "assigned_to": "John Doe"},
+    {"number": "INC0010002", "short_description": "VPN not connecting", "state": "In Progress", "assigned_to": "Jane Smith"},
+    {"number": "INC0010003", "short_description": "Slow laptop performance", "state": "Resolved", "assigned_to": "Amit Patel"},
+    {"number": "INC0010004", "short_description": "Unable to print", "state": "Pending User Info", "assigned_to": "Michael Chen"}
+  ],
+  "requests": [
+    {"number": "REQ0010001", "item_name": "Laptop Replacement", "state": "Approved", "requested_for": "Priya Sharma"},
+    {"number": "REQ0010002", "item_name": "VPN Access Request", "state": "Completed", "requested_for": "Rajesh Kumar"},
+    {"number": "REQ0010003", "item_name": "Software License - Adobe", "state": "In Progress", "requested_for": "Sarah Lee"}
+  ],
+  "users": [
+    {"name": "John Doe", "email": "john.doe@company.com", "department": "IT"},
+    {"name": "Jane Smith", "email": "jane.smith@company.com", "department": "Network"},
+    {"name": "Rajesh Kumar", "email": "rajesh.kumar@company.com", "department": "Admin"},
+    {"name": "Sarah Lee", "email": "sarah.lee@company.com", "department": "HR"}
+  ]
+}

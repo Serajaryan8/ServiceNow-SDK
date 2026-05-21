@@ -1,0 +1,61 @@
+.setup-root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--bg-base);
+    padding: var(--sp-4);
+}
+
+.setup-card {
+    width: 100%;
+    max-width: 420px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--r-lg);
+    padding: var(--sp-8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--sp-3);
+}
+
+.setup-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--sp-2);
+}
+
+.setup-logo  { font-size: 40px; line-height: 1; }
+
+.setup-title {
+    font-size: var(--text-xl);
+    font-weight: 700;
+    color: var(--text-1);
+}
+
+.setup-subtitle {
+    font-size: var(--text-sm);
+    color: var(--text-2);
+    text-align: center;
+    margin-bottom: var(--sp-2);
+}
+
+.setup-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-4);
+}
+
+.setup-error {
+    background: var(--red-bg);
+    border: 1px solid var(--red);
+    color: var(--red);
+    border-radius: var(--r-md);
+    padding: var(--sp-3) var(--sp-4);
+    font-size: var(--text-sm);
+}
+
+.setup-submit { width: 100%; padding: var(--sp-3); font-size: var(--text-md); }
